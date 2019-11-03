@@ -1,3 +1,3 @@
-# csprag-f19-rpn
+# csprag-f19-rpn-ahw8
 
-Homework 8 for [EECS 201](https://cspragmatics.com)
+Advanced homework 8 for [EECS 201](https://cspragmatics.com)
