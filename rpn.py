@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import operator
+import readline
+import sys
 
 
 operators = {
@@ -27,11 +29,17 @@ def calculate(myarg):
     if len(stack) != 1:
         raise TypeError("Too many parameters")
     return stack.pop()
+            
+def calculate_single(calculation):
+    print("Result: ", calculate(calculation))
 
-def main():
+def calculate_forever():
     while True:
         result = calculate(input("rpn calc> "))
         print("Result: ", result)
 
 if __name__ == '__main__':
-    main()
+    if len(sys.argv) == 4:
+        calculate_single(" ".join(sys.argv[1:]))
+    else:
+        calculate_forever()
