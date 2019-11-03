@@ -21,3 +21,15 @@ class TestBasics(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+def dummy_function():
+    print("Just")
+    print("some")
+    print("extra")
+    print("lines")
+    print("to")
+    print("make")
+    print("coverage")
+    print("go")
+    print("down")
+    
